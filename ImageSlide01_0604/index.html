@@ -20,11 +20,11 @@
         #header .nav {float: right; width:950px; height:100px; line-height: 100px; background: #b39ddb;}
 
         /* banner */
-        #banner {width: 120px; text-align: center; height: 360;}
+        #banner {width: 1200px; text-align: center; height: 360; overflow: hidden;}
         
         /* slider */
         .slideList {position: relative; width: 1200px; height: 360px;}
-        .slideList .slideImg {position: relative;}
+        .slideList .slideImg {position: relative}
         .slideList .slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); background: rgba(255,255,255,0.5); padding: 10px 30px; border-radius: 25px;}
         .slideList .slideImg img {display: block;}
         /* contents */
@@ -87,7 +87,19 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-
+        var currentIndex = 0;
+        
+        setInterval(function(){
+            if(currentIndex<2){
+                currentIndex++; //하나씩증가
+            }else{ //2보다 클 경우
+                currentIndex = 0; //0으로 초기화
+            }
+            
+            var slidePosition = currentIndex * (-360)+"px"; //이미지 높이
+            $(".slideList").animate({top:slidePosition},400); //4초동안 작동
+            
+        },3000); //3초에 한번씩 함수를 설정한다
     </script>
 </body>
 
