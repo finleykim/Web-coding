@@ -1,0 +1,54 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+
+    //Menu01
+    $(".menu > ul > li").mouseover(function(){
+        $(".menu > ul > li > ul").stop().slideDown(200);
+    })
+        $(".menu > ul > li").mouseout(function(){
+        $(".menu > ul > li > ul").stop().slideUp(200);
+    })
+    
+    //tab
+    $(document).ready(function(){
+            var tabBtn = $(".tab-btn > ul > li")
+    var tabCont = $(".tab-cont > ul")
+    
+    tabCont.hide().eq(0).show();
+    
+    tabBtn.click(function(e){
+        e.preventDefault();
+        var target = $(this)
+        var index = target.index();
+        tabBtn.removeClass("active");
+        target.addClass("active");
+        tabCont.css("display","none");
+        tabCont.eq(index).css("display","block");
+        
+    });
+    });
+    
+
+    var curruntIndex = 0;
+    
+    setInterval(function(){
+        if(currentInex < 2){
+            currentIndex++
+        }else{
+            curruntIndex = 0;
+        }
+        var slidePosition = currentIndex * (-360)+"px"
+        $(".slideList").animate({top:slidePosition},400);
+    },3000);
+    
+    
+    $(".tab-cont > ul > li").click(function(){
+        $(".popup").css("display","none");
+    });
+    
+    $(".popup > h2").click(function(){
+        $(".popup").css("display","block");
+    });
+    
+</script>
+
