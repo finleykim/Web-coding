@@ -1,0 +1,89 @@
+        /*reset*/
+*{margin:0; padding:0; font-family: 'Noto Sans KR', sans-serif;}
+ul{margin: 0; padding: 0; }
+li{list-style: none; }
+a{text-decoration: none; color: white;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear:both;}
+.title {width:100%; color: black; text-align: center; margin-top: 100px;margin-bottom: 100px; letter-spacing: 7px; font-size: 12px;}
+
+#wrap {width: 100%;  margin: 0 auto;}
+
+
+/* slide */
+.slideList {position: relative; width: 100%; overflow: hidden;}
+.slideList .slideImg {position: relative;}
+.slideList .slideImg .back {position: absolute; top: 0; left: 0;}
+.slideList .slideImg img {width: 100%;}
+
+#aboutme img {width: 100%}
+
+
+#project .title {width: 100%; color: black; text-align: center; margin-bottom: 100px; margin-top: 200px; letter-spacing: 7px;}
+#project .personal {width : 100%;}
+#project .personal .personaltitle img {width : 100%;}
+#project .personal ul {color: black; margin-left: 30px; font-weight: 800; font-size: 40px; font-style: italic; margin-top: 100px;}
+#project .personal li.period {color: gray; margin-left: 30px; margin-bottom: 30px;}
+#project .personal li .personal_cont {width:95%; margin-left: 30px; margin-bottom: 10px; }
+#project .personal li p {float: left; padding-top: 10px; margin-left: 40px; margin-bottom: 5px; margin-top: 10px; font-size: 20px; font-weight: 300; }
+#project .personal li img {width: 100%;}
+#project .personal .appstore img {width: 110px; margin-left: 5px; float: left; margin-top: 10px;}
+#project .personal .git img {width: 100px; margin-left: 10px; margin-top: 10px; }
+
+#project .team {width : 100%;}
+#project .team li .discription ul.discription01 {font-size: 20px; font-style: normal; margin-top: 10px; font-weight: 400}
+#project .team li .discription ul.discription01 li {font-size: 20px; font-style: normal; font-weight: 200; margin-left: 15px; margin-top: 5px; }
+#project .team .teamtitle img {width : 100%; margin-top: 200px;}
+
+#project .team ul {color: black; margin-left: 30px; font-weight: 800; font-size: 40px; font-style: italic; margin-top: 100px;}
+#project .team li.period {color: gray; margin-left: 30px; margin-bottom: 30px;}
+#project .team li .personal_cont {width:95%; margin-left: 30px; margin-bottom: 10px; }
+#project .team li p {float: left; padding-top: 10px; margin-left: 40px; margin-bottom: 5px; margin-top: 10px; font-size: 20px; font-weight: 300; }
+#project .team li img {width: 100%;}
+#project .team .appstore img {width: 110px; margin-left: 5px; float: left; margin-top: 10px;}
+#project .team .git img {width: 100px; margin-left: 10px; margin-top: 10px; }
+
+/*miniproject*/
+#project .miniproject {width : 100%;}
+#project .miniproject .miniprojectitle img {width : 100%; margin-top: 200px;}
+#project .miniproject .miniprojectList {display: flex; justify-content: center;}
+#project .miniproject ul {color: black; margin-left: 30px; margin-top: 50px; text-align: center;}
+#project .miniproject nav {width: 90%; height: 750px; }
+#project .miniproject nav .devide {width: 47%; height: 700px; float:left; margin: 5px;}
+#project .miniproject nav li {text-align: left; }
+#project .miniproject nav li a {padding: 15px; display: block; color:black; background: white; margin-bottom: 5px; border-style: solid; border-color: rgba(0,0,0,0.2); border-width: 0.5px;}
+#project .miniproject nav li a:hover {background: #4970ff; border-style: none;}
+
+#project .miniproject nav li ul.submenu {margin-top: 10px; display: none; height: 100%;}
+#project .miniproject nav li img {height: 300px;}
+#project .miniproject nav li ul.submenu .discribe {font-weight: 300; color: black; font-size: 18px; margin-bottom: 30px; padding-right: 10px; }
+#project .miniproject nav li ul.submenu .tag {font-weight: 200; color: dodgerblue; font-size: 18px; margin-bottom: 15px;}
+#project .miniproject nav li ul.submenu .logtitle {font-weight: 200; color: black; font-size: 18px; margin-bottom: 5px; font-weight: 400; margin-top: 30px; margin-bottom: 15px; height: 15px;}
+#project .miniproject nav li ul.submenu .loglist {height: 80px; margin-bottom: 70px;}
+#project .miniproject nav li ul.submenu li a {background: #d6d6d6; border-radius: 30px; width: 150px; text-align: center; border-style: none; float: left; margin-right: 10px; font-size: 15px; font-weight: 400;padding: 5px; }
+
+#project .miniproject nav li ul.submenu li a:hover {background: #4970ff; }
+
+.nullbox {width: 100%; height:500px; background: #fff; display: none;}
+.miniprojectgithub {width: 100%;display: flex; justify-content: center;}
+.miniprojectgithub li {float: left; font-weight: 400; color: #bf6161; margin-top: 50px;}
+.miniprojectgithub li.discription {padding: 10px;}
+.miniprojectgithub li img {width: 100px; margin-left: 20px;}
+
+
+#techskills img {width: 100%;}
+
+
+#footer .foot {padding-left: 10px; background: #ebda8d; padding: 30px; height: 500px;display: flex; justify-content: center;}
+#footer .foot ul {font-style: italic; }
+#footer .foot ul li {font-size: 20px; font-weight: 300; }
+#footer .foot ul li.footertitle {font-weight: 400; float: left; font-size: 20px;}
+#footer .foot ul li.content {margin-left: 70px;}
+#footer .foot ul li.qr img {width: 30%; padding-top:20px; float: left; padding-right: 10px; padding-top:10px;}
+#footer .foot ul li.qr {width: 100%;}
+
+#footer .foot ul .small img {width: 15%; padding-top: 20px; padding-right: 5px;}
+#footer .foot ul .small {width: 100%;}
+#footer .foot ul .secondicon img {width: 30%; padding-top:5px;}
+
+#copyright {height: 30px; background: #e2c74c;}
+#copyright li {text-align: center;padding-top: 5px;}

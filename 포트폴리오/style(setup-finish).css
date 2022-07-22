@@ -1,0 +1,19 @@
+        *{margin:0; padding:0; font-family: 'Noto Sans KR', sans-serif;}
+        ul{margin: 0; padding: 0; }
+        li{list-style: none; }
+        a{text-decoration: none; color: white;}
+        .clearfix::before, .clearfix::after {display: block; content: ''; clear:both;}
+
+#all {background: #fff; height: 100%; width: 100%; position: fixed;}
+#third .back {height: 100%; width:100%; background: #fff; float: right;  }
+#all .back img {width: 500px;}
+#all .back {padding-top: 200px; }
+#first {height: 100%; width: 33.3%; float: left;}
+#first img {float: left; bottom: 0; position: absolute;}
+#second {height: 100%; width: 33.3%; float: right;}
+#second img {float: right;}
+.centerImg {height: 60%; width: 66.6%; position: absolute; top: 0; left: 0; bottom:0;}
+.centerImg img {width: 25%; height: 100%; float: right;}
+
+
+
